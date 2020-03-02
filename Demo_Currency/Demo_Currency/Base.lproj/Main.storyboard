@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5GU-dy-Mht">
+                                <rect key="frame" x="317" y="104" width="230" height="30"/>
+                                <color key="backgroundColor" red="0.22352941179999999" green="0.55294117649999996" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.22352941179999999" green="0.55294117649999996" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Select">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="toConvertCurrencyBtnActn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yo0-xH-MLG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OEv-Xv-YMX">
+                                <rect key="frame" x="53" y="104" width="230" height="30"/>
+                                <color key="backgroundColor" red="0.22352941179999999" green="0.55294117649999996" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.22352941179999999" green="0.55294117649999996" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Select">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="fromCurrencyBtnActn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O27-26-seq"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gGU-g3-5gP">
+                                <rect key="frame" x="53" y="168" width="230" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aAF-TB-DnK">
+                                <rect key="frame" x="317" y="168" width="230" height="30"/>
+                                <color key="backgroundColor" red="0.22352941179999999" green="0.55294117649999996" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.22352941179999999" green="0.55294117649999996" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Convert">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="convertCurrencyBtnActn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Ow-Hf-Z6n"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Idm-6B-wjn">
+                                <rect key="frame" x="291" y="104" width="18" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Idm-6B-wjn" firstAttribute="top" secondItem="OEv-Xv-YMX" secondAttribute="top" id="5fK-Y4-ZcS"/>
+                            <constraint firstItem="OEv-Xv-YMX" firstAttribute="leading" secondItem="gGU-g3-5gP" secondAttribute="leading" id="9Up-Ck-beo"/>
+                            <constraint firstItem="OEv-Xv-YMX" firstAttribute="bottom" secondItem="Idm-6B-wjn" secondAttribute="bottom" id="F8r-gu-mRs"/>
+                            <constraint firstItem="5GU-dy-Mht" firstAttribute="leading" secondItem="aAF-TB-DnK" secondAttribute="leading" id="GlX-PF-dn9"/>
+                            <constraint firstItem="Idm-6B-wjn" firstAttribute="leading" secondItem="OEv-Xv-YMX" secondAttribute="trailing" constant="8" symbolic="YES" id="HWF-z2-ROj"/>
+                            <constraint firstItem="gGU-g3-5gP" firstAttribute="top" secondItem="aAF-TB-DnK" secondAttribute="top" id="a57-7b-TY7"/>
+                            <constraint firstItem="OEv-Xv-YMX" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="84" id="cHA-EB-aZe"/>
+                            <constraint firstItem="5GU-dy-Mht" firstAttribute="trailing" secondItem="aAF-TB-DnK" secondAttribute="trailing" id="doa-Rr-PCv"/>
+                            <constraint firstItem="OEv-Xv-YMX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="37" id="lEn-pc-Rhs"/>
+                            <constraint firstItem="5GU-dy-Mht" firstAttribute="leading" secondItem="Idm-6B-wjn" secondAttribute="trailing" constant="8" symbolic="YES" id="lcG-Kn-yRD"/>
+                            <constraint firstItem="Idm-6B-wjn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nRu-Cz-iXX"/>
+                            <constraint firstItem="OEv-Xv-YMX" firstAttribute="trailing" secondItem="gGU-g3-5gP" secondAttribute="trailing" id="oqG-M0-tKB"/>
+                            <constraint firstItem="OEv-Xv-YMX" firstAttribute="baseline" secondItem="5GU-dy-Mht" secondAttribute="baseline" id="osA-Sq-gBG"/>
+                            <constraint firstItem="gGU-g3-5gP" firstAttribute="top" secondItem="OEv-Xv-YMX" secondAttribute="bottom" constant="34" id="tmF-Eo-3W4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5GU-dy-Mht" secondAttribute="trailing" constant="37" id="xWm-4b-SvM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="convertCurrencyBtn" destination="aAF-TB-DnK" id="JHm-KX-fOS"/>
+                        <outlet property="fromBtn" destination="OEv-Xv-YMX" id="XaH-bb-p69"/>
+                        <outlet property="numberTxtFld" destination="gGU-g3-5gP" id="VAA-p9-Vzt"/>
+                        <outlet property="toConvertBtn" destination="5GU-dy-Mht" id="bUs-MP-mx7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
